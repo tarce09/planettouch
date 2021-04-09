@@ -1,0 +1,211 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color:rgba(235,20,76,1) ;
+}
+.link{
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    transition: 0.3s;
+}
+.link:hover{
+    padding-left: 10px;
+    color: #fff;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(235,20,76,1) 13%, rgba(180,7,33,1) 65%, rgba(177,6,30,1) 85%, rgba(173,5,27,1) 100%);
+}
+
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 30px;
+    transform: translateY(-100px);
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.contact .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    transform: translateY(-100px);
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    width: 70%;
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
+                2px 2px 5px rgba(0,0,0,0.2);
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
+                2px 2px 5px rgba(0,0,0,0.2);
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500px;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 200ms;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-17px);
+}
+
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background-color: #00e1ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media(max-width:991px)
+{
+    .contact{
+        padding-top: 50px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .container{
+        flex-direction: column;
+        transform: translateY(-50px);
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,.contactform{
+        width: 100%;
+    }
+
+}
+
+@keyframes transitionleft{
+    from {
+        opacity: 0;
+        transform: translateX(-40px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+@keyframes transitionright{
+    from {
+        opacity: 0;
+        transform: translateX(40px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+@keyframes transitionbtm{
+    from {
+        opacity: 0;
+        transform: translateY(-40px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+.fadeleft{
+    animation: transitionleft 1s;
+}
+.faderight{
+    animation: transitionright 1s;
+}
+.fadebtm{
+    animation: transitionbtm 1s;
+}

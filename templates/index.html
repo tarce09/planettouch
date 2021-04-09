@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'index.css' %}" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="text-gray-600 body-font fadebtm">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      
+    </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900 link" href="/">Home</a>
+      <a class="mr-5 hover:text-gray-900 link" href="#about">About us</a>
+      <a class="mr-5 hover:text-gray-900 link" href="#product">Product</a>
+      <a class="mr-5 hover:text-gray-900 link" href="/contact">Contact Us</a>
+      <a class="mr-5 hover:text-gray-900 link" href="/#ideas">ideas</a>
+    </nav>
+  </div>
+</header>
+        <div class="home">
+            <div class="row">
+                <div class="col-1 fadeleft">
+                    <div class="title">Planet Touch</div>
+                    <div class="subtitle">healthcare technologies</div><br><br>
+                    <a href="#about" class="explore">explore</i></a>
+                </div>
+                <div class="col-2 faderight">
+                    <img src="{% static 'undraw_medicine_b1ol.png' %}" class="health">
+                </div>
+            </div>
+        </div>
+        <div class="decorator">
+        <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 178.40000000000003,224.13333333333335 356.80000000000007,248.2666666666667 523,260 C 689.1999999999999,271.7333333333333 843.2,271.06666666666666 994,259 C 1144.8,246.93333333333334 1292.4,223.46666666666667 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#e91e63" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
+        </div>
+        <div class="about" id="about">
+            <div class="title">Planet Touch's World Changing Idea</div>
+            <div class="container">
+                <div class="row second">
+                    <div class="col fir">
+                        <div class="contentboxl">
+                            <i class="fas fa-quote-left"></i><br><br>
+                            <i>Planet Touch has brought you a self-sanitizing glove that has major use in corona outbreaks. The gloves release disinfectant when squeezed which sanitizes the object or anything you touch.</i>
+                        </div>
+                        <div class="contentboxl">
+                            <i class="fas fa-quote-left"></i><br><br>
+                            <i>The root cause of the spread of the coronavirus is through surface contact. This product will the first step towards breaking the cross-contaminating chain. Further leading to healing the world. Before killing the coronavirus we will kill the fear of COVID 19 from your mind.</i>
+                        </div>
+                    </div>
+                    <div class="col sec">
+                        <div class="contentboxr">
+                            <i class="fas fa-quote-right"></i><br><br>
+                            <i>As coronavirus created havoc in the entire world.
+                            An idea was born at Planet Touch. We analyzed the spread of COVID 19 and aimed to stop its cross-contamination chain and we came out with the self-sanitizing gloves. We worked on our idea with a single motto “break the chain”.</i>
+                        </div>
+                        <div class="contentboxr">
+                            <i class="fas fa-quote-right"></i><br><br>
+                            <i>We at Planet Touch are making constant efforts with innovation at our hands to make this world a better and safer place for you. We assure you to take you back to the time when humanity was not just living but thriving.</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 123.06666666666666,177.33333333333331 246.13333333333333,154.66666666666666 433,169 C 619.8666666666667,183.33333333333334 870.5333333333333,234.66666666666669 1049,246 C 1227.4666666666667,257.3333333333333 1333.7333333333333,228.66666666666666 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#850425ff" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 200)"></path></svg>
+    <div class="features" id="ideas">
+        <div class="title">Let us amuse you with our unique product</div>
+        <div class="container">
+            <div class="points">
+                <ul class="">
+                    <li><i class="far fa-hand-point-right icon2"></i>  We have made this product durable and to withstand a long period of wear time.</li>
+                    <li><i class="fas fa-cog icon2"></i></i>  We have engineered it in such a way that it can be used multiple times without losing any efficiency.</li>
+                    <li><i class="fas fa-prescription-bottle icon2"></i>  It can be refilled by you as many times as you want.</li>
+                    <li><i class="fas fa-globe-asia icon2"></i>  Eco-friendly product with the idea of a safe and healthy planet.</li>
+                    <li><i class="fas fa-recycle icon2"></i>  We used *naturally disposable* gloves keeping in mind the planet's concern.</li>
+                    <li><i class="fas fa-fan icon2"></i>  It also provides ample ventilation and at the same time protecting your hands.</li>
+                    <li><i class="fas fa-leaf icon2"></i>  A sustainable effort towards our product and this planet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 264.5,167.5 529,135 769,135 C 1009,135 1224.5,167.5 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#eb144cff" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
+<section class="text-gray-600 body-font overflow-hidden product" id="product">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-4/5 mx-auto flex flex-wrap">
+      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded productimg" src="{%static "Untitled87.jpg" %}">
+      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+        <h2 class="text-sm title-font text-gray-500 tracking-widest font-wh">Planet Touch</h2>
+        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1 font-wh">Self Sanitizing Glove</h1>
+        <div class="flex mb-4">
+
+        </div>
+        <p class="leading-relaxed font-wh">The spread of the coronavirus is mainly through surface contact.
+                                    Our gloves release disinfectants by rubbing or squeezing hands.
+                                    Any surface you touch gets instantly sanitized which kills all germs and viruses.
+                                    Hence if any person comes in contact with that surface no virus transfer takes place and therefore “THE CHAIN IS BROKEN”.</p><br>
+                                    <p class="font-wh">Get the planet touch self sanitization glove at an introductory price</p><br>
+                                    <p class="font-wh">Get yours now and save yourself and the planet!</p>
+        <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+          <div class="flex ml-6 items-center">
+            <div class="relative">
+              <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <span class="title-font font-medium text-2xl text-gray-900 font-wh">Rs 349.00</span>
+          <a class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded" href="/contact">Buy<a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 194.5,175 389,150 629,150 C 869,150 1154.5,175 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#eb144cff" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 200)"></path></svg>
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col basefooter">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <img src="{% static "Planet Touch final logo.png" %}" class="ptlogo">
+      <span class="ml-3 text-xl" href="/">Planet Touch</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 cc">© 2021 Planet Touch 
+    </p>
+  </div>
+</footer>
+    </body>
+</html>
