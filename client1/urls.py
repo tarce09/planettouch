@@ -19,10 +19,12 @@ from django.conf.urls import url
 from app import urls,views
 from django.views.static import serve
 from . import settings
+from app.views import video
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', views.form,name="form"),
     path('',views.index,name="index"),
+    path("video/",views.video,name="video"),
     url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
