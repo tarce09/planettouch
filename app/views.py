@@ -19,3 +19,6 @@ def form(request):
 
 def index(request):
     return render(request,'index.html')
+
+def video(request):
+    return render(request,'video.html')
