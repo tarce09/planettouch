@@ -35,7 +35,7 @@ EMAIL_HOST_USER="emailsender992001@gmail.com"
 EMAIL_HOST_PASSWORD="aryan2001"
 EMAIL_USE_TLS=True
 
-ALLOWED_HOSTS = ['127.0.0.1','planettouch.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','planettouch.herokuapp.com','planet-touch.herokuapp.com']
 
 
 # Application definition
